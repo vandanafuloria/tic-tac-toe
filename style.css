@@ -1,0 +1,135 @@
+body{
+    text-align: center;
+}
+
+body > h1{
+    font-size: 3rem;
+ 
+   
+}
+ body>h1:hover{
+    
+ }
+
+.playground{
+    width: 450px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.playground div{
+    width: 150px;
+    height: 150px;
+    font-size: 6rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    border:3px solid rgb(5, 0, 10);
+    background-color: rgb(231, 227, 223);
+    border-radius: 10px;
+    box-shadow:  0 0 5px cyan, 0 0 25px cyan;
+
+}
+/* .playground:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+} */
+
+.score-board{
+    display: flex;
+    justify-content: space-between;
+}
+.score-board div{
+    height: 200px;
+    width: 200px ;
+    padding:0.2rem;
+    border-radius: 10px;
+}
+.score-board h1{
+    font-size: xx-large;
+}
+.score-board h3{
+    font-size: xx-large;
+}
+
+.score-board div:nth-child(1),.score-board div:nth-child(2){
+   position: relative;
+   bottom: 0;
+   transition: bottom 3s ease;
+    
+}
+dialog form button{
+    display: inline-block;
+   
+}
+p{
+    background-color: rgb(81, 81, 108);
+  
+    margin:auto;
+    padding:10px;
+    font-size: xx-large;
+    color: black;
+    background-color: #ffb900;
+    font-weight: 600;
+
+
+}
+dialog {
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(214, 227, 151);
+}
+dialog form input{
+    border-radius: 10px;
+    padding:5px;
+    margin:5px;
+    width: 90%;
+    border:none;
+    outline: none;
+    font-size: large;
+    font-weight: 900;
+}
+.player1-score, .player2-score{
+    width: 200px;
+}
+.score-board h1{
+    overflow-wrap: break-word;
+    margin:0;
+}
+.box:nth-child(1){
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+.box:nth-child(2){
+    border-top-color: transparent;
+}
+.box:nth-child(3){
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+.box:nth-child(4), .box:nth-child(7){
+    border-left-color: transparent;
+}
+.box:nth-child(6), .box:nth-child(9){
+    border-right-color: transparent;
+}
+.box:nth-child(7), .box:nth-child(8), .box:nth-child(9){
+    border-bottom-color: transparent;
+}
+.btn {
+    padding:10px;
+    margin:5px;
+    border-radius: 10px;
+    background-color: #527c77;
+    width: 200px;
+    color:white;
+    
+
+}
+.btn:hover{
+    background-color: cyan;
+
+}
+.winner-glow{
+    box-shadow: 0 0 5px #ffb900, 0 0 25px #ffb900, 0 0 50px #ffb900, 0 0 100px #ffb900, 0 0 200px #ffb900; ;
+
+}
